@@ -1,0 +1,22 @@
+plugins {
+    id "java"
+    id 'com.diffplug.spotless' version '5.0.0'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.16.20'
+    annotationProcessor group: 'org.projectlombok', name: 'lombok', version: '1.16.20'
+
+    implementation 'org.ektorp:org.ektorp:1.4.4'
+}
+
+allprojects {
+
+}
